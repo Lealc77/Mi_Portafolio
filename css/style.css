@@ -208,11 +208,54 @@ section{
 
 .home-imgHover:hover {
     background: var(--bg-color);
-    
+    opacity: .8;
 }
 
 img{
     border: 5px solid #e7b523;
     border-radius: 250px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+}
+
+
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.about-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sobre-content h3{
+    font-size: 2.6rem;
+}
+
+.sobre-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-box.btns{
+    display: inline-block;
+    width: 15rem;
 }
 
