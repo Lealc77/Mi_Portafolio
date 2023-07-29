@@ -458,3 +458,78 @@ span{
 .habilidad-column:nth-child(2) .habilidad-content .progreso:nth-child(3) .barra span{
     width: 25%;
 }
+
+.contacto{
+   min-height: auto;
+   padding-bottom: 7rem; 
+}
+
+.contacto form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacto form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacto form .input-box .input-campos{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contacto form .input-box .input-campos input,
+.contacto form .textarea-campo textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid #e7b523;
+}
+
+.contacto form .input-box .input-campos input::placeholder,
+.contacto form .textarea-campo textarea::placeholder{
+    color: var(--text-color);
+}
+
+.contacto form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contacto form .input-box .input-campos input:focus~.focus,
+.contacto form .input-box .input-campos input:valid~.focus,
+.contacto form .textarea-campo textarea:focus~.focus,
+.contacto form .textarea-campo textarea:valid~.focus{
+    width: 100%;
+}
+
+.contacto form .textarea-campo{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+.contacto form .textarea-campo textarea{
+    resize: none;
+}
+
+.contacto form .btn-box.btns .btn{
+    cursor: pointer;
+}
+
