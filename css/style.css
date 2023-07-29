@@ -73,7 +73,7 @@ section{
 }
 
 .home{
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -195,7 +195,7 @@ section{
 
 .home-imgHover{
     position: absolute;
-    top: 0%;
+    top: 0;
     right: 0;
     width: 45%;
     height: 100%;
@@ -214,6 +214,7 @@ section{
 img{
     border: 5px solid #e7b523;
     border-radius: 250px;
+    box-shadow: 0px,3px,5px;
 }
 
 .about{
@@ -533,3 +534,49 @@ span{
     cursor: pointer;
 }
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text{
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconTop a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #e7b523;
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before{
+    width: 100%;
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--bg-color);
+}
